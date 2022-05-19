@@ -12,16 +12,16 @@ label, input, textarea {
   display: inline-block;
 }
 
-/* input, select, textarea { */
 label,
 input,
-textarea  {
+textarea,
+select  {
   width: 100%;
 }
 
 .zip-input {
   display: block;
-  width: 33%;
+  width: 50%;
 }
 
 button {
@@ -175,5 +175,8 @@ legend h2 {
 }
 .flex1 input {
   float: right;
+}
+.zip-input {
+  width: 25%;
 }
 }
