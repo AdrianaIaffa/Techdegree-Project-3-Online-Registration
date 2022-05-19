@@ -17,6 +17,7 @@ input, select, textarea, button {
 }
 
 .zip-input {
+  display: block;
   width: 33%;
 }
 
