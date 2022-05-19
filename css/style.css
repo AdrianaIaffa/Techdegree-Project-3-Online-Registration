@@ -8,6 +8,17 @@ header,
 footer {
   text-align: center;
 }
+label, input, textarea {
+  display: inline-block;
+}
+
+input, select, textarea, button {
+  width: 100%
+}
+
+.zip-input {
+  width: 33%;
+}
 
 footer {
   font-size: 0.8em;
@@ -39,13 +50,10 @@ legend {
 }
 
 label {
-  display: block;
   color: #a4a4c1;
   font-size: 0.75em;
   padding: 5px;
 }
-
-
 
 form {
   max-width: 768px;
@@ -61,25 +69,15 @@ fieldset {
 }
 
 input, textarea, select, button, #zip {
-    display: block;
     margin: 5px 0;
     padding: 8px;
     border-radius: 8px;
     border: none;
 }
 
-input, textarea, select, button {
-      width: 100%;
-}
-
-input, textarea, select, option, #zip
-{
+input, textarea, select, option, #zip {
   font-size: 18px;
   background-color: #f0f0f5;
-}
-
-#zip {
-  width: 33%;
 }
 
 input[type="radio"],
@@ -105,4 +103,14 @@ button {
   background-color: #5d5d89;
   color: white;
   padding: 20px 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex input {
+  width: auto;
+  margin: 0;
 }
