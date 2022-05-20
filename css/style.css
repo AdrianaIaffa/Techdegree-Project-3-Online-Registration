@@ -8,6 +8,10 @@ header,
 footer {
   text-align: center;
 }
+form {
+  background-color: #F8F8F8;
+}
+
 label, input, textarea {
   display: inline-block;
 }
@@ -66,9 +70,9 @@ legend h2 {
   margin: 20px;
 }
 
-
 label {
-  color: #a4a4c1;
+  color: #50507c;
+  font-weight: bold;
   font-size: 0.75em;
   padding: 5px;
 }
@@ -94,8 +98,9 @@ input, textarea, select, button, #zip {
 }
 
 input, textarea, select, option, #zip {
-  font-size: 18px;
-  background-color: #f0f0f5;
+  font-size: 16px;
+  background-color: #e0e0eb;
+  color: #46466d;
 }
 
 input[type="radio"],
@@ -106,15 +111,41 @@ input[type=radio]{
     margin-bottom: 22px;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     outline: 1px solid #3e3e5b;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   text-align: right;
   font-style:  italic;
   font-size: 0.70em;
   padding-right: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=address1],
+input[type=address2],
+input[type=address3],
+input[type="zip-code"],
+select[type=state],
+textarea[type=texta] {
+  background-color: #e0e0eb;
+  transition: width, .35s ease-in-out;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select[type=state]:focus,
+input[type=tel]:focus,
+input[type=address1]:focus,
+input[type=address2]:focus,
+input[type=address3]:focus,
+input[type="zip-code"]:focus,
+textarea[type=texta]:focus {
+  background-color: white;
 }
 
 button {
@@ -160,21 +191,21 @@ legend h2 {
 }
 
 .flex2 input {
-  float: left;
+  align-items: flex-start;
 }
 .flex1 label,
 .flex2 label {
-  float: left;
+  align-items: flex-start;
   font-size: 0.9em;
 }
 .flex1 label {
   width: 160px;
 }
 .flex2 label{
-  width: 125px
+  width: 130px
 }
 .flex1 input {
-  float: right;
+  align-items: flex-end;
 }
 .zip-input {
   width: 25%;
