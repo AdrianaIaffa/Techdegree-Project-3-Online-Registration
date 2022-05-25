@@ -90,14 +90,14 @@ fieldset {
   padding: 0;
 }
 
-input, textarea, select, button, #zip {
+input, textarea, select, button {
     margin: 5px 0;
     padding: 8px;
     border-radius: 8px;
     border: none;
 }
 
-input, textarea, select, option, #zip {
+input, textarea, select, option  {
   font-size: 16px;
   background-color: #e0e0eb;
   color: #46466d;
@@ -113,6 +113,7 @@ input[type=radio]{
 
 input:focus, textarea:focus, select:focus {
     outline: 1px solid #3e3e5b;
+    background-color: white;
 }
 
 input::placeholder,
@@ -123,29 +124,9 @@ textarea::placeholder {
   padding-right: 10px;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=address1],
-input[type=address2],
-input[type=address3],
-input[type="zip-code"],
-select[type=state],
-textarea[type=texta] {
+input, select, textarea {
   background-color: #e0e0eb;
-  transition: width, .35s ease-in-out;
-}
-
-input[type=text]:focus,
-input[type=email]:focus,
-select[type=state]:focus,
-input[type=tel]:focus,
-input[type=address1]:focus,
-input[type=address2]:focus,
-input[type=address3]:focus,
-input[type="zip-code"]:focus,
-textarea[type=texta]:focus {
-  background-color: white;
+  transition: .35s ease-in-out;
 }
 
 button {
@@ -186,27 +167,22 @@ legend h2 {
   align-items: center;
 }
 
-.flex1 {
-  justify-content: space-around;
-}
-
 .flex2 input {
   align-items: flex-start;
 }
+
 .flex1 label,
 .flex2 label {
   align-items: flex-start;
   font-size: 0.9em;
+  flex-basis: 140px;
 }
-.flex1 label {
-  width: 160px;
+
+.flex1 input,
+.flex1 select {
+  flex-basis: calc(100% - 140px);
 }
-.flex2 label{
-  width: 130px
-}
-.flex1 input {
-  align-items: flex-end;
-}
+
 .zip-input {
   width: 25%;
 }
